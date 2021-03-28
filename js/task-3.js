@@ -20,6 +20,6 @@ const images = [
 const ulReff = document.querySelector('#gallery')
 
 images.forEach(({url, alt}) => {
-    ulReff.insertAdjacentHTML("afterbegin", `<li><img src ='${url}' ${alt} class = size></li>`)
+    ulReff.insertAdjacentHTML("afterbegin", `<li><img src ='${url}' alt ='${alt}' class = size></li>`)
     
 });
