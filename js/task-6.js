@@ -10,12 +10,18 @@ function onInputType(event) {
         inputRef.classList.remove('invalid')
         inputRef.classList.add('valid')        
     }
-    else if (str.length !== 0) {
-    inputRef.classList.add('invalid')              
+    else{
+        inputRef.classList.add('invalid')              
     }
-    else if (str.length === 0) {
-    inputRef.classList.remove('valid', 'invalid')              
-    }
+
+// Я сделал лишние проверки, чтобы при пустой строке была обводка серая, такая как по умолчнию.
+
+    // else if (str.length !== 0) {
+    // inputRef.classList.add('invalid')              
+    // }
+    // else if (str.length === 0) {
+    // inputRef.classList.remove('valid', 'invalid')              
+    // }
     console.log(str.length)
     return str;
     

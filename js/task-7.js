@@ -8,7 +8,7 @@ rangeRef.addEventListener('input', onInputChange);
 function onInputChange(event) {
     let fs = +event.currentTarget.value;
 
-    textRef.innerHTML = `<span id="text" style = 'font-size: ${fs}px' > Абракадабра!</span>`
+    textRef.style.fontSize = `${fs}px`;
     
     
 }
